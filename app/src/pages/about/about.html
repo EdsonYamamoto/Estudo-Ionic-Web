@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager>
+    <ion-slide class="slide_image">
+      <h2>slide 1</h2>
+      <ion-header>
+        <ion-navbar>
+          <ion-title>Radio</ion-title>
+        </ion-navbar>
+      </ion-header>
+
+      <button ion-button onclick=' alert( "evento") '>Button</button>
+    </ion-slide>
+    <ion-slide class="slide_image">
+      <h2>slide 2</h2>
+      <button ion-button  block color="dark" (click)="doAlert()">
+        Show Basic Alert
+      </button>
+    </ion-slide>
+    <ion-slide class="slide_image">
+      <h2>slide 3</h2>
+      <button ion-button  block color="primary" (click)="doPromptAlert()">
+        Show prompt Alert
+      </button>
+    </ion-slide>
+    <ion-slide class="slide_image">
+      <h2>slide 4</h2>
+      <ion-list>
+        <ion-item *ngFor="let data of dataJSON">
+          <ion-thumbnail item-start>
+            <img src="{{data.img}}">
+          </ion-thumbnail>
+          <h2>{{data.titulo}}</h2>
+          <p>{{data.descricao}}</p>
+          <button ion-button clear item-end>{{data.botao}}</button>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

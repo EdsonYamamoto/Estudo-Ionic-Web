@@ -1,0 +1,15 @@
+Ta vendo este arquivo aqui?
+app\src\app\app.module.ts
+
+ta vendo essa estrutura aqui?
+var config = {
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  timestampsInSnapshots: true
+};
+
+vc precisa pegar os dados de chave do firebase pra conseguir acesso.

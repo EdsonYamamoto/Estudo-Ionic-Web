@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Consulta firebase
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Nomes armazenados do banco</ion-list-header>
+    <ion-item>
+      @ionicframework 
+    </ion-item>
+    <ion-item *ngFor="let data of dataJSON">
+      <ion-icon name="ionic" item-start></ion-icon>
+      
+      <p>ID: {{data.id}}</p>
+      <p>Data Criação: {{data.documento.DataCriacao}}</p>
+      <p>Data ultima atualizacao: {{data.documento.DataUpdate}}</p>
+      <p>Deletado: {{data.documento.Deletado}}</p>
+      <p>Nome: {{data.documento.Documento.nome}}</p>
+      <p>Numero: {{data.documento.Documento.number}}</p>
+      <button ion-button  block color="dark" (click)='doAlert(data.id)'>
+        Alerta ID
+      </button>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
