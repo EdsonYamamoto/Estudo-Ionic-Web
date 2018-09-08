@@ -47,6 +47,31 @@ export class AboutPage {
     img: "https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-totoro.png"
   }]
 
+  public exemploSlide4JSON = {
+    tituloTela: "Slide main 4",
+    descricao: "barata",
+    forma: "simplificada"
+  };
+
+  public exemploSlide6JSON = {
+    tituloTela: "Slide main 6",
+    descricao: "Dados com vetor",
+    forma: "complexa",
+    vetor: [
+      {
+        var1: "variavel string",
+        var2: 12,
+        var3: true,
+      },
+      {
+        var1: "string",
+        var2: 54,
+        var3: false,
+      }
+    ]
+
+  };
+
   doPromptAlert() {
     const alert = this.alertCtrl.create({
       title: 'Login',

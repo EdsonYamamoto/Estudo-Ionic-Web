@@ -31,7 +31,13 @@
       </button>
     </ion-slide>
     <ion-slide class="slide_image">
-      <h2>slide 4</h2>
+      <h1>{{exemploSlide4JSON.tituloTela}}</h1>
+      <h2>{{exemploSlide4JSON.descricao}}</h2>
+      <h3>{{exemploSlide4JSON.forma}}</h3>
+    </ion-slide>
+
+    <ion-slide class="slide_image">
+      <h2>slide 5</h2>
       <ion-list>
         <ion-item *ngFor="let data of dataJSON">
           <ion-thumbnail item-start>
@@ -43,5 +49,22 @@
         </ion-item>
       </ion-list>
     </ion-slide>
+
+    <ion-slide class="slide_image">
+      <h1>{{exemploSlide6JSON.tituloTela}}</h1>
+      <h2>{{exemploSlide6JSON.descricao}}</h2>
+      <h3>{{exemploSlide6JSON.forma}}</h3>
+      <ion-list>
+        <ion-item *ngFor="let data of exemploSlide6JSON.vetor">
+          <ion-thumbnail item-start>
+          
+          </ion-thumbnail>
+          <h2>{{data.var1}}</h2>
+          <p>{{data.var2}}</p>
+          <button ion-button clear item-end>{{data.var3}}</button>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+
   </ion-slides>
 </ion-content>
